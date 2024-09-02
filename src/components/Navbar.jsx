@@ -45,7 +45,7 @@ const Navbar = () => {
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/course'>Courses</Link></li>
             <li><Link to='/contact'>Contact</Link></li>
-            <li><Link>About</Link></li>
+            <li><Link to='/about'>About</Link></li>
         </>
     );
 
@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 ${ sticky ? "sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 dark:text-white duration-300 transition-all ease-in-out" : " "}`}>
             <div className="navbar dark:bg-slate-900 dark:text-white">
                 <div className="navbar-start">
-                    <div className="dropdown">
+                    <div className="dropdown dark:bg-slate-900 dark:text-white">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -72,14 +72,14 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow dark:bg-slate-900 dark:text-white">
                             {navItem}
                         </ul>
                     </div>
-                    <a className="text-3xl font-bold cursor-pointer">bookStore</a>
+                    <a className="text-xl md:text-3xl font-bold cursor-pointer">bookStore</a>
                 </div>
-                <div className='navbar-end space-x-3'>
-                    <div className="navbar-center hidden lg:flex">
+                <div className='navbar-end space-x-3 dark:bg-slate-900 dark:text-white'>
+                    <div className="navbar-center hidden lg:flex dark:bg-slate-900 dark:text-white">
                         <ul className="menu menu-horizontal px-1">
                             {navItem}
                         </ul>
@@ -105,7 +105,7 @@ const Navbar = () => {
 
                         {/* sun icon */}
                         <svg
-                            className="swap-off h-7 w-7 fill-current"
+                            className="swap-off h-5 w-5 md:h-7 md:w-7 fill-current"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             onClick={()=> setTheme(theme==="dark"?"light":"dark")}
@@ -116,7 +116,7 @@ const Navbar = () => {
 
                         {/* moon icon */}
                         <svg
-                            className="swap-on h-7 w-7 fill-current"
+                            className="swap-on h-5 w-5 md:h-7 md:w-7 fill-current"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             onClick={()=> setTheme(theme==="light"?"dark":"light")}

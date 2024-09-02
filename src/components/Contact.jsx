@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { Link } from 'react-router-dom'
 
 
 const Contact = () => {
@@ -30,15 +31,18 @@ const Contact = () => {
                                         placeholder='Enter your email'
                                         className='w-80 px-3 py-1 border rounded-md outline-none dark:bg-slate-900 dark:text-white'
                                     />
-                                </div> 
+                                </div>
                                 <div className='mt-4 space-y-2'>
                                     <span>Message:</span>
                                     <br />
                                     <textarea className="textarea textarea-bordered w-80 dark:bg-slate-900 dark:text-white dark:border-white" placeholder="Type your message"></textarea>
-                                </div> 
+                                </div>
                                 {/* Button */}
-                                <div className='mt-4'>
+                                <div className='mt-4 space-x-2'>
                                     <button className='bg-blue-500 text-white rounded-md px-3 py-1 hover:bg-blue-700 duration-200'>Submit</button>
+                                    <Link to={'/'}>
+                                        <button className='bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-700 duration-300 mt-6'>Back</button>
+                                    </Link>
                                 </div>
                             </form>
                         </div>
