@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Login from './Login';
 import Logout from './Logout';
 import { useAuth } from '../context/AuthProvider';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -41,10 +42,10 @@ const Navbar = () => {
 
     const navItem = (
         <>
-            <li><a href='/'>Home</a></li>
-            <li><a href='/course'>Courses</a></li>
-            <li><a href='/contact'>Contact</a></li>
-            <li><a>About</a></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/course'>Courses</Link></li>
+            <li><Link to='/contact'>Contact</Link></li>
+            <li><Link>About</Link></li>
         </>
     );
 
