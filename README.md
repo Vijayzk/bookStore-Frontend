@@ -1,2 +1,2 @@
 # This is a book store app frontend .
-https://bookstore-frontend-93xw.onrender.com/
+It shows books for sale with login and signup features.
