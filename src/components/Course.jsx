@@ -10,7 +10,7 @@ const Course = () => {
   useEffect(() => {
      const getBook = async() => {
       try{
-        const res = await axios.get('https://bookstore-backend-pbcw.onrender.com/book')
+        const res = await axios.get(`${import.meta.env.VITE_API}/book`)
         //console.log(res.data)
         setBook(res.data)
       }

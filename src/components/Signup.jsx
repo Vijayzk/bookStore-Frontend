@@ -22,7 +22,7 @@ const Signup = () => {
          email:data.email,
          password:data.password
       }
-      await axios.post("https://bookstore-backend-pbcw.onrender.com/user/signup",userInfo).then((res)=>{
+      await axios.post(`${import.meta.env.VITE_API}/user/signup`,userInfo).then((res)=>{
          console.log(res.data)
          if(res.data){
             toast.success('SignedUp Successfully');

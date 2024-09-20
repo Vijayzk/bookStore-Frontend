@@ -76,7 +76,7 @@ const Navbar = () => {
                             {navItem}
                         </ul>
                     </div>
-                    <a className="text-xl md:text-3xl font-bold cursor-pointer">bookStore</a>
+                    <a className="text-xl md:text-3xl font-bold cursor-pointer">book<span className='text-green-500'>Store</span> </a>
                 </div>
                 <div className='navbar-end space-x-3 dark:bg-slate-900 dark:text-white'>
                     <div className="navbar-center hidden lg:flex dark:bg-slate-900 dark:text-white">
